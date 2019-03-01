@@ -23,10 +23,10 @@ p.title1 {
   padding-left: 30px;
   padding-top: 5px;
   border: 1px solid black;
-  margin-right: -11px;
-  margin-top: -1px;
   font-weight: bold;
   font-size: 1.25em;
+  margin-right: -1px;
+  margin-top: -1px;
 }
 p.title2 {
   position: absolute;
@@ -38,11 +38,11 @@ p.title2 {
   padding-left: 30px;
   padding-top: 5px;
   border: 1px solid black;
-  margin-right: -11px;
-  margin-top: -1px;
   color: #ffffff;
   font-weight: bold;
   font-size: 1.25em;
+  margin-right: -1px;
+  margin-top: -1px;
 }
 p.title3 {
   position: absolute;
@@ -54,16 +54,24 @@ p.title3 {
   padding-left: 30px;
   padding-top: 5px;
   border: 1px solid black;
-  margin-right: -11px;
-  margin-top: -1px;
   font-weight: bold;
   font-size: 1.25em;
+  margin-right: -1px;
+  margin-top: -1px;
 }
-.rel {
+.inside-box {
   position: relative;
   padding-top: 40px;
+  background-color: #b7b7b7;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
 }
-		/* Simple Responsive Framework. */
+.outside-box {
+  border: none;
+  padding: 15px;
+}
 .row {
   width: 100%;
 }
@@ -72,13 +80,7 @@ p.title3 {
 @media (min-width: 992px) {
   .col-lg-4 {
     float: left;
-    border: 1px solid black;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    background-color: #a5a5a5;
-    width: 32%;
-    margin: .6%;
+    width: 33%;
   }
 }
 
@@ -86,19 +88,12 @@ p.title3 {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6, .col-md-12 {
     float: left;
-    border: 1px solid black;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    background-color: #a5a5a5;
   }
   .col-md-6 {
-    width: 48.5%;
-    margin: .75%;
+    width: 50%;
   }
   .col-md-12 {
-    width: 98.2%;
-    margin: 1%;
+    width: 100%;
   }
 }
   /**********Small devices only***********/
@@ -106,13 +101,7 @@ p.title3 {
 @media (max-width: 767px) {
   .col-sm-12 {
     float: left;
-    border: 1px solid black;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    background-color: #a5a5a5;
-    width: 98.2%;
-    margin: 1%;
+    width: 100%;
   }
 }
 
